@@ -1,2 +1,2 @@
 # hadoop-docker-image
-Keep it LTS, A hadoop docker image
+Keep it LTS. An Apache hadoop docker image
