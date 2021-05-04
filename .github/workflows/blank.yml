@@ -1,0 +1,17 @@
+name: CI
+
+on: [workflow_dispatch,push]
+
+
+jobs:
+  vm-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: get source
+        run: |
+          wget -r --no-parent --accept hadoop-3.?.?.tar.gz https://apache.website-solution.net/hadoop/common/current
+          tar -xzvf hadoop-3.?.?.tar.gz
+          mv hadoop-3.?.? /usr/local/hadoop
+          rm hadoop-3.?.?.tar.gz
+      
