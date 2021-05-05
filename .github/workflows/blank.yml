@@ -1,14 +1,10 @@
 name: CI
 
-on: [workflow_dispatch,push]
-
+on: [workflow_dispatch, push]
 
 jobs:
   vm-build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: docker pull apache/hadoop:3
       - run: docker pull apache/hadoop:2
-
-      

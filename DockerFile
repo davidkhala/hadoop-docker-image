@@ -1,6 +1,1 @@
-FROM apache/hadoop:3
-
-
-
-
-
+FROM apache/hadoop:2
